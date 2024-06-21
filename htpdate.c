@@ -1003,7 +1003,7 @@ int main(int argc, char *argv[]) {
                     sleeptime = minsleep;
 
                     /* Sleep for some time after a time adjust or set */
-                    sleep(fabs(timeavg*2000));
+                    sleep( (unsigned int) fabs(timeavg*2000));
                 }
             } else {
                 /* Increase polling interval */
